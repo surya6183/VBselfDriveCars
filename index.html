@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VB Selfdrive Cars – Vizag</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+  <span class="brand">VB Selfdrive</span>
+
+  <div class="nav-actions">
+    <a href="tel:+918688516662" class="nav-btn">Call</a>
+    <a href="https://wa.me/918688516662" class="nav-btn">WhatsApp</a>
+    <a href="javascript:void(0)" onclick="openMap()" class="nav-btn">Location</a>
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+  </div>
+</div>
+
+</header>
+
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Drive Vizag<br><span>Your Way</span></h1>
+    <p>Premium self-drive cars · Clean · Transparent · Instant booking</p>
+    <button onclick="scrollToCars()">Choose Your Car</button>
+  </div>
+</section>
+
+<section id="cars" class="cars">
+  <h2>Select Your Ride</h2>
+
+  <div class="car-grid">
+
+    <!-- CAR CARD -->
+    <div class="car-card">
+      <img src="https://images.drivespark.com/ph-big/2019/05/maruti-alto-exterior-1.jpg">
+      <div class="car-body">
+        <h3>Maruti Alto</h3>
+        <p>Manual · Petrol · 4 Seater</p>
+        <div class="car-footer">
+          <span>₹1000 / day</span>
+          <button onclick="bookCar('Maruti Alto')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://imgd.aeplcdn.com/642x336/n/zill3ra_1429634.jpg?q=80">
+      <div class="car-body">
+        <h3>Maruti Swift</h3>
+        <p>Manual · Petrol · 5 Seater</p>
+        <div class="car-footer">
+          <span>₹1700 / day</span>
+          <button onclick="bookCar('Maruti Swift')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://imgd.aeplcdn.com/642x336/n/cw/ec/150603/i20-exterior-right-front-three-quarter-7.jpeg?q=80">
+      <div class="car-body">
+        <h3>Hyundai i20</h3>
+        <p>Manual · Petrol · Premium</p>
+        <div class="car-footer">
+          <span>₹2000 / day</span>
+          <button onclick="bookCar('Hyundai i20')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://imgd.aeplcdn.com/642x336/n/cw/ec/102663/baleno-exterior-right-front-three-quarter-71.jpeg?q=80">
+      <div class="car-body">
+        <h3>Maruti Baleno</h3>
+        <p>Manual · Petrol · Premium</p>
+        <div class="car-footer">
+          <span>₹2000 / day</span>
+          <button onclick="bookCar('Maruti Baleno')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2022/12/GQ/JD/UF/86775922/maruti-suzuki-vitara-brezza-car.png">
+      <div class="car-body">
+        <h3>Brezza</h3>
+        <p>Manual · Petrol · SUV</p>
+        <div class="car-footer">
+          <span>₹2500 / day</span>
+          <button onclick="bookCar('Brezza')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://images.autox.com/uploads/2023/01/Tata-Punch-Atomic-Orange-With-Black-Roof-500x261.jpg">
+      <div class="car-body">
+        <h3>Tata Punch</h3>
+        <p>Manual · Petrol · 5 Seater</p>
+        <div class="car-footer">
+          <span>₹1800 / day</span>
+          <button onclick="bookCar('Tata Punch')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/106815/creta-exterior-right-front-three-quarter-6.png?isig=0&q=80">
+      <div class="car-body">
+        <h3>Hyundai Creta</h3>
+        <p>Manual · Petrol · 5 Seater</p>
+        <div class="car-footer">
+          <span>₹2500 / day</span>
+          <button onclick="bookCar('Hyundai Creta')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://imgd.aeplcdn.com/642x336/n/zwuqg3a_1573857.jpg?q=80">
+      <div class="car-body">
+        <h3>Maruti XL6</h3>
+        <p>Manual · Petrol · 6 Seater</p>
+        <div class="car-footer">
+          <span>₹3500 / day</span>
+          <button onclick="bookCar('Maruti XL6')">Book</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Instant Booking</h2>
+  <p>Chat on WhatsApp · No forms · No delays</p>
+  <a id="whatsappLink">Book on WhatsApp</a>
+</section>
+
+<footer class="footer">
+  © VB Selfdrive Cars · Visakhapatnam
+</footer>
+
+<script src="script.js"></script>
+
+
+<!-- MAP MODAL -->
+<div id="mapModal" class="map-modal">
+  <div class="map-backdrop" onclick="closeMap()"></div>
+
+  <div class="map-container">
+    <button class="map-close" onclick="closeMap()">✕</button>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d335.930858183619!2d83.29824961287954!3d17.715222907169757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDQyJzU0LjYiTiA4M8KwMTcnNTQuMiJF!5e0!3m2!1sen!2sin!4v1768808511916!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        
+    </iframe>
+  </div>
+</div>
+
+</body>
+</html>
